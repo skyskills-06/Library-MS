@@ -28,6 +28,7 @@ public class SingupPage extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
+        evaluatorEllipse2D1 = new org.jdesktop.swing.animation.timing.evaluators.EvaluatorEllipse2D();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -35,14 +36,13 @@ public class SingupPage extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
+        txt_contact = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        txt_username = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -53,14 +53,18 @@ public class SingupPage extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
+        txt_password = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
+        txt_email = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        rSMaterialButtonCircle2 = new rojerusan.RSMaterialButtonCircle();
+        rSMaterialButtonCircle3 = new rojerusan.RSMaterialButtonCircle();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -94,16 +98,17 @@ public class SingupPage extends javax.swing.JFrame {
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 710, 610));
 
         jPanel4.setBackground(new java.awt.Color(102, 102, 255));
+        jPanel4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 255, 255)));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText(".................................");
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, 200, 30));
+        txt_contact.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        txt_contact.setForeground(new java.awt.Color(255, 255, 255));
+        txt_contact.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 255, 255)));
+        jPanel4.add(txt_contact, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, 200, 30));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 25)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Singup Page");
+        jLabel7.setText("Signup Page");
         jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, 150, 40));
 
         jLabel8.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
@@ -121,20 +126,15 @@ public class SingupPage extends javax.swing.JFrame {
         jLabel10.setText("Contact");
         jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 440, 200, 30));
 
-        jLabel11.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText(".................................");
-        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 200, 30));
-
         jLabel12.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_Account_50px.png"))); // NOI18N
         jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 50, 50));
 
-        jLabel13.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Username");
-        jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 200, 30));
+        txt_username.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        txt_username.setForeground(new java.awt.Color(255, 255, 255));
+        txt_username.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 255, 255)));
+        jPanel4.add(txt_username, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 200, 30));
 
         jPanel5.setBackground(new java.awt.Color(102, 102, 255));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -186,11 +186,6 @@ public class SingupPage extends javax.swing.JFrame {
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_Account_50px.png"))); // NOI18N
         jPanel4.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 50, 50));
 
-        jLabel23.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText(".................................");
-        jPanel4.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 200, 30));
-
         jLabel24.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
         jLabel24.setText("Username");
@@ -206,10 +201,10 @@ public class SingupPage extends javax.swing.JFrame {
         jLabel26.setText("Password");
         jPanel4.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 200, 30));
 
-        jLabel27.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel27.setText(".................................");
-        jPanel4.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, 200, 30));
+        txt_password.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        txt_password.setForeground(new java.awt.Color(255, 255, 255));
+        txt_password.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 255, 255)));
+        jPanel4.add(txt_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, 200, 30));
 
         jLabel28.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
@@ -221,12 +216,35 @@ public class SingupPage extends javax.swing.JFrame {
         jLabel29.setText("Email");
         jPanel4.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 200, 30));
 
-        jLabel30.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel30.setText(".................................");
-        jPanel4.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 200, 30));
+        txt_email.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        txt_email.setForeground(new java.awt.Color(255, 255, 255));
+        txt_email.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 255, 255)));
+        jPanel4.add(txt_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 200, 30));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 0, 380, 770));
+        jLabel31.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel31.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 255, 255)));
+        jPanel4.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, 200, 30));
+
+        jLabel11.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Create New account Here");
+        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 200, 40));
+
+        jLabel32.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel32.setText("Username");
+        jPanel4.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 200, 30));
+
+        rSMaterialButtonCircle2.setBackground(new java.awt.Color(51, 51, 255));
+        rSMaterialButtonCircle2.setText("LOGIN\n");
+        jPanel4.add(rSMaterialButtonCircle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 630, 210, 50));
+
+        rSMaterialButtonCircle3.setBackground(new java.awt.Color(255, 51, 51));
+        rSMaterialButtonCircle3.setText("SIGNUP\n");
+        jPanel4.add(rSMaterialButtonCircle3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 210, 50));
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 10, 380, 770));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1520, 840));
 
@@ -270,11 +288,11 @@ public class SingupPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private org.jdesktop.swing.animation.timing.evaluators.EvaluatorEllipse2D evaluatorEllipse2D1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
@@ -285,18 +303,16 @@ public class SingupPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -304,5 +320,11 @@ public class SingupPage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private rojerusan.RSMaterialButtonCircle rSMaterialButtonCircle2;
+    private rojerusan.RSMaterialButtonCircle rSMaterialButtonCircle3;
+    private javax.swing.JLabel txt_contact;
+    private javax.swing.JLabel txt_email;
+    private javax.swing.JLabel txt_password;
+    private javax.swing.JLabel txt_username;
     // End of variables declaration//GEN-END:variables
 }
